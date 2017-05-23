@@ -1,0 +1,91 @@
+//-------------------------------------------------------------------------------
+// Global Styles
+//-------------------------------------------------------------------------------
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	display: flex;
+	// background-color: #071B2E;
+	background: #0a2035;
+	background: radial-gradient(circle at center,  #0a2035 , #071b2e);
+	font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+	letter-spacing: -0.1px;
+	color: #DDD;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+em {
+	font-style: italic;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	display: block;
+	margin: 80px 0;
+	text-align: center;
+}
+hr:after { 
+	content: '\000B7 \000B7 \000B7 '; 
+	display: inline-block; 
+	position: relative; 
+	top: -13px; 
+	padding: 0 3px; 
+	color: #999; 
+	font-size: 48px; 
+	letter-spacing: 10px;
+}
+
+//-------------------------------------------------------------------------------
+// Global Link Styles
+//-------------------------------------------------------------------------------
+
+a {
+	// color: #666;
+	// color: #FFEDBC;
+	color: #FFEDBC;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	border-bottom: 1px dotted #666;
+
+	&:hover {
+		// color: #111;
+		color: #FFF;
+		transition-duration: 0.1s;
+		border-bottom: 1px solid #666;
+	}
+}
+
+//-------------------------------------------------------------------------------
+// Make those fonts sexy
+//-------------------------------------------------------------------------------
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "liga" on;
+	margin: 0;
+}
+
+//-------------------------------------------------------------------------------
+// Set fade in opacity 
+//-------------------------------------------------------------------------------
+
+@keyframes fadein {
+    from { opacity: 0; margin-top: 120px; }
+    to   { opacity: 1; margin-top: 80px;}
+}
+
+@keyframes fadein-copyright {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<title>An AudioNotes Recording</title>
+	<meta name="description" content="AudioNotes a free macOS menu bar app that helps you record and share audio messages. Download free." />
+	<meta name="robots" content="noindex, follow" />
+	<meta name="referrer" content="always" />
+
+	<!-- JS -->
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="/audio_note.js"></script>
+
+	<!-- Styles -->
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel='stylesheet' href='style.css' type='text/css' media='screen' />
+
+	<!-- Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-99703546-1', 'auto');
+	  ga('send', 'pageview');
+	</script>	
+
+</head>
+
+<body>
+
+<div id="center_stage">
+	<noscript>
+		<div id="javascript_error" class="error" style="display: block;">
+			AudioNotes requires JavaScript.
+		</div>
+	</noscript>
+
+	<div id="audio_container"></div>
+
+	<div id="expired" class="error">
+		This AudioNote has expired.
+	</div>
+
+	<div id="not_found" class="error">
+		This AudioNote doesn't exist yet.
+	</div>
+
+	<div id="unexpected_error" class="error">
+		An unexpected error occurred.
+	</div>
+</div>
+
+<div id="expiry"></div>
+
+<div id="accreditation">Recorded with <a href="https://audionot.es">AudioNotes</a></div>
+
+</body>
+</html>

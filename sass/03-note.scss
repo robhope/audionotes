@@ -1,0 +1,51 @@
+//-------------------------------------------------------------------------------
+// AudioNote Page
+//-------------------------------------------------------------------------------
+
+#center_stage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#center_stage .error {
+	display: none; // hide when testing
+	font-weight:500; 
+	font-stretch:normal;
+	font-size: 200%;
+	color: #fff;
+}
+
+#accreditation, #expiry {
+	// visibility: hidden; // hide when testing
+	position: absolute;
+	bottom: 80px;
+	font-size: 15px;
+    line-height: 15px;		
+
+    @media (max-width: 600px) {
+    	width: 100%;
+    	text-align: center;
+		font-size: 12px;
+    	line-height: 12px;	
+	}
+}
+
+#expiry {
+	left: 80px;
+
+	@media (max-width: 600px) {
+		left: auto;	
+		bottom: 40px;
+	}
+}
+
+#accreditation {
+	right: 80px;
+
+	@media (max-width: 600px) {
+		right: auto;	
+		bottom: 60px;
+	}
+}
