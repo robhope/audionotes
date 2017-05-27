@@ -8,16 +8,24 @@ body, html {
 }
 body {
 	display: flex;
-	// background-color: #071B2E;
 	background: #0a2035;
-	background: radial-gradient(circle at center,  #0a2035 , #071b2e);
 	font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 17px;
     line-height: 26px;
 	letter-spacing: -0.1px;
-	color: #DDD;
+	color: #DDD; 
 }
-
+body.home {
+	background: #111d2d;
+	background-image: url('menubar.jpg');
+	background-size: 1px 22px;
+	background-repeat: repeat-x;
+	background-position: top;	
+}
+body.note {
+	background: #0a2035;
+	background: radial-gradient(circle at center,  #0a2035 , #071b2e);
+}
 p {
 	margin-bottom: 20px;
 }

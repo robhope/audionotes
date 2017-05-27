@@ -2,28 +2,33 @@
 // Landing Page Styles
 //-------------------------------------------------------------------------------
 
+.demo {
+	background-image: url('demo.gif');
+	background-size: 421px 161px;
+	background-repeat: no-repeat;
+	background-position: top right;
+	display: flex;
+	width: 100%;
+	height: 100%;
+
+	@media (max-width: 420px) {
+		background-position: top left;
+	}
+}
 .container {
 	margin: auto;
 	width: 640px;
 	max-width: 100%;
-	// margin: 120px auto 120px auto;
 
-	@media (max-width: 800px) {
-		padding: 40px 40px 20px 40px;
+	@media (max-width: 700px) {
+		padding: 0 40px 20px 40px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 160px;
 	}
 
-	p.icon {
-		margin-bottom: 80px; 
-
-		@media (max-width: 800px) {
-			margin-bottom: 40px;
-		}
-
-		img {
-			max-width: 30px;
-			height: audio;
-		}
-
+	@media (max-height: 850px) {
+		margin-top: 160px;
 	}
 
 }
